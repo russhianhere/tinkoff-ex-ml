@@ -18,3 +18,8 @@ generate_script.py --length 100 --seed "бомжевала" --file twentyone
 ```
 train_script.py --save trained_dict
 ```
+## Доступные датасеты
+
+* trained_dict
+* twentyone
+* duck
