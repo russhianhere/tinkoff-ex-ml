@@ -2,6 +2,9 @@ import pickle
 
 class TrainML:
 
+    def __init__(self,
+                saveas):
+        self.saveas = saveas
 
     def fit(self, text):
 
@@ -24,7 +27,7 @@ class TrainML:
             else:
                 d[word][next_word] = 1
 
-        self.save_obj(d, "trained_dict")
+        self.save_obj(d, self.saveas)
         print (d)
 
 

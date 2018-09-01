@@ -5,13 +5,16 @@ class Generate:
 
 
     def __init__(self,
-                length=100, seed=False):
+                generate,
+                length=100,
+                seed=False):
         self.length = length
         self.seed = seed
+        self.generate = generate
 
 
     def fill(self):
-        d = self.load_obj("trained_dict")
+        d = self.load_obj(self.generate)
         d_list = list(d.keys())
         d_val = list(d.values())
 
