@@ -23,3 +23,4 @@ train_script.py --save trained_dict
 * trained_dict
 * twentyone
 * duck
+* mansnothot

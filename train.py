@@ -34,7 +34,7 @@ class TrainML:
 
     def cleantext(self, text):
 
-        needclean = "!@#$,.?:;"
+        needclean = "!@#$,.?:;()<>''"
 
         for char in needclean:
             text = text.replace(char,"")

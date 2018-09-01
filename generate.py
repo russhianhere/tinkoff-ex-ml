@@ -28,13 +28,18 @@ class Generate:
 
         for i in range (0, self.length):
 
-            key = self.weight_rand(d[past_word])
+            try:
+                key = self.weight_rand(d[past_word])
 
-            past_words = d[past_word]
-            list_words = list(past_words.keys())
+                past_words = d[past_word]
+                list_words = list(past_words.keys())
 
-            past_word = list_words[key]
-            gen_text += past_word + " "
+                past_word = list_words[key]
+                gen_text += past_word + " "
+
+            except KeyError:
+                past_word = random.choice(d_list)
+
 
         print (gen_text)
 
