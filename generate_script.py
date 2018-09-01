@@ -9,6 +9,6 @@ parser.add_argument('--file', action='store', dest='file', help='Датасет 
 
 args = parser.parse_args()
 
-Gen = generate.Generate(args.length, args.seed, args.file)
+Gen = generate.Generate(args.file, args.length, args.seed)
 
 Gen.fill()
