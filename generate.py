@@ -26,7 +26,7 @@ class Generate:
 
         gen_text = past_word + " "
 
-        for i in range (0, self.length):
+        for i in range (0, self.length-1):
 
             try:
                 key = self.weight_rand(d[past_word])
